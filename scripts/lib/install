@@ -259,6 +259,9 @@ mkdir -p /etc/zulip
 [machine]
 puppet_classes = $PUPPET_CLASSES
 deploy_type = $DEPLOYMENT_TYPE
+
+[application_server]
+http_only = true
 EOF
 
     # Note: there are four dpkg-query outputs to consider:
